@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,6 +39,10 @@
     </style>
     <!-- tailwind & daisyUI cdn -->
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
@@ -50,9 +54,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              accent: "#179800",
+              "green-primary": "#179800",
               "custom-blue": "#102861",
               "custom-green": "#115414",
+              "custom-bg": "#EFEBE3",
             },
           },
         },
@@ -61,11 +66,62 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="bg-custom-bg">
       <!-- navigation bar -->
-      <nav></nav>
+      <nav class="py-4 border-2 border-green-primary md:border-none">
+        <div class="navbar w-5/6 mx-auto flex justify-between items-center">
+          <div class="">
+            <img
+              class="hidden md:inline"
+              src="c2-assets/logo-header.png"
+              alt=""
+            />
+            <img class="md:hidden" src="c2-assets/logo_mobile.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a class="text-black">Product</a></li>
+              <li><a class="text-black">Services</a></li>
+              <li><a class="text-black">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="space-x-3">
+            <i class="fa-solid fa-magnifying-glass fa-lg hidden md:inline"></i>
+            <i class="fa-solid fa-cart-shopping fa-lg hidden md:inline"></i>
+            <button
+              class="btn hidden md:inline font-bold border-2 border-green-primary bg-white text-black"
+            >
+              Login
+            </button>
+            <button
+              class="btn hidden md:inline bg-green-primary text-white font-bold"
+            >
+              Register
+            </button>
+            <i
+              class="fa-solid fa-bars fa-2xl md:hidden text-green-primary h-full"
+            ></i>
+          </div>
+        </div>
+      </nav>
       <!-- banner bar -->
-      <section></section>
+      <section class="w-full md:w-5/6 mx-auto text-center pt-7 px-6 md:p-0">
+        <h1 class="text-4xl p-2 md:text-6xl md:pt-10">
+          Freshness
+          <span class="text-green-primary"
+            >You Can<br />
+            Count</span
+          >
+          On, Prices You'll Love!
+        </h1>
+        <p class="w-5/6 mx-auto text-m md:text-lg md:w-2/5">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we've got you covered every day!
+        </p>
+        <div>
+          <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
+        </div>
+      </section>
     </header>
     <!-- main -->
     <main>
