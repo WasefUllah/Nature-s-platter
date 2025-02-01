@@ -31,7 +31,7 @@
         font-weight: 500;
         font-style: normal;
       }
-      .poppins-medium {
+      .poppins {
         font-family: "Poppins", serif;
         font-weight: 500;
         font-style: normal;
@@ -64,11 +64,13 @@
       };
     </script>
   </head>
-  <body>
+  <body   >
     <!-- header -->
     <header class="lg:bg-custom-bg">
       <!-- navigation bar -->
-      <nav class="py-4 border-[1.5px] border-green-primary md:border-none">
+      <nav
+        class="sticky top-0 z-10 bg-white lg:bg-custom-bg py-4 border-[1.5px] border-green-primary md:border-none"
+      >
         <div
           class="navbar w-full lg:w-10/12 mx-auto flex justify-between items-center"
         >
@@ -91,12 +93,12 @@
             <i class="fa-solid fa-magnifying-glass fa-lg hidden md:inline"></i>
             <i class="fa-solid fa-cart-shopping fa-lg hidden md:inline"></i>
             <button
-              class="btn hidden md:inline font-bold border-2 border-green-primary bg-white text-black"
+              class="btn transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-green-700 hover:text-white hidden md:inline font-bold border-2 border-green-primary bg-white text-black"
             >
               Login
             </button>
             <button
-              class="btn hidden md:inline bg-green-primary text-white font-bold"
+              class="btn transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-green-700 hidden md:inline bg-green-primary text-white font-bold"
             >
               Register
             </button>
@@ -108,9 +110,9 @@
       </nav>
       <!-- banner bar -->
       <section class="w-full md:w-5/6 mx-auto text-center pt-7 px-6 md:p-0">
-        <h1 class="text-4xl p-2 md:text-6xl md:pt-10 font-bold">
+        <h1 class=" text-4xl p-2 md:text-6xl md:pt-10 font-bold">
           Freshness
-          <span class="text-green-primary"
+          <span class="text-green-primary animate-pulse"
             >You Can<br />
             Count</span
           >
@@ -180,7 +182,7 @@
               <p class="mb-5">
                 Discover a world of treats, toys, and essentials handpicked for
               </p>
-              <button class="btn bg-white text-black">Buy now</button>
+              <button class="btn transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-green-700 hover:text-white hover:border-none bg-white text-black">Buy now</button>
               <div class="absolute right-6 bottom-0">
                 <img
                   class="ml-auto w-60 lg:w-40"
@@ -324,9 +326,9 @@
         </div>
       </section>
       <!-- arrival & offers -->
-      <section class="w-11/12 lg:w-9/12 mx-auto pt-12 mb-96">
+      <section class="w-11/12 lg:w-9/12 mx-auto pt-12">
         <h1 class="text-3xl text-green-primary font-bold pb-10">
-          Arrival & offer
+          Arrival & offers
         </h1>
         <div
           class="flex flex-col lg:flex-row justify-between items-start space-y-5 lg:space-x-5 lg:space-y-0"
@@ -342,9 +344,9 @@
               <div
                 class="p-2 bg-[#63B76D] rounded-lg lg:w-56 text-white text-center text-lg"
               >
-                <p>Cook Exotic Dishes</p>
+                <p class="poppins">Cook Exotic Dishes</p>
               </div>
-              <p class="text-xl pl-2 pt-4 text-white">
+              <p class="text-xl pl-2 pt-4 text-white poppins">
                 UP to <span class="font-bold">20% OFF</span>
               </p>
             </div>
@@ -367,14 +369,84 @@
               <div
                 class="p-2 bg-[#2A4D97] rounded-lg lg:w-48 text-white text-center text-lg"
               >
-                <p>World's No.1 Rice</p>
+                <p class="poppins">World's No.1 Rice</p>
               </div>
-              <p class="text-xl pl-2 pt-4 text-white">
+              <p class="text-xl pl-2 pt-4 text-white poppins">
                 UP to <span class="font-bold">40% OFF</span>
               </p>
             </div>
             <div class="w-1/2 pr-2">
               <img src="c2-assets/india-gate-mock-up.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq section -->
+      <section class="w-11/12 lg:w-9/12 mx-auto pt-12 mb-96">
+        <h3 class="text-4xl font-bold text-left text-green-primary">
+          Frequently Asked Questions
+        </h3>
+        <div class="hero w-full">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="c2-assets/faq3.png"
+              class="h-96 bg-transparent rounded-lg shadow-xl"
+            />
+            <div class="space-y-3">
+              <div class="collapse collapse-arrow border border-green-primary">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  How do I ensure the vegetables stay fresh after delivery?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    We recommend storing leafy greens in airtight containers or
+                    wrapping them in a damp cloth. Root vegetables like carrots
+                    and potatoes should be kept in a cool, dry place. For longer
+                    freshness, refrigerate perishables as soon as you receive
+                    them.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-green-primary">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  Do you offer organic vegetables?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Yes! We source our vegetables from trusted farms that use
+                    organic and pesticide-free practices. Each product page
+                    mentions whether the vegetable is organic.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-green-primary">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  What are your delivery areas and timings?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    We deliver to major cities and surrounding areas. Deliveries
+                    usually take 24-48 hours depending on location. You can
+                    check delivery availability at checkout.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-green-primary">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Can I customize my vegetable order?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Absolutely! You can handpick your vegetables or choose from
+                    our curated vegetable boxes. If you have special requests,
+                    let us know during checkout.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -385,15 +457,17 @@
       <div class="w-11/12 lg:w-9/12 mx-auto relative">
         <!-- news -->
         <section
-          class="absolute bg-custom-bg rounded-lg -top-72 lg:-top-1/2 lg:flex lg:justify-between lg:items-center w-full p-4 lg:p-8"
+          class="absolute bg-custom-bg rounded-lg -top-72 lg:-top-1/2 space-y-3 lg:space-y-0 lg:flex lg:justify-between lg:items-center w-full p-4 lg:p-8"
         >
           <!-- image part -->
-          <div class="w-3/4 mx-auto">
+          <div class=" lg:w-3/4 mx-auto">
             <img class="w-full" src="c2-assets/vegetable-busket.png" alt="" />
           </div>
           <!-- Information -->
-          <div class="w-3/4 mx-auto text-center lg:text-left">
-            <h1 class="text-4xl font-bold lg:py-5 text-green-primary lg:text-black">
+          <div class="w-full lg:w-3/4 mx-auto text-center lg:text-left">
+            <h1
+              class="text-4xl animate-bounce font-bold lg:py-5 text-green-primary lg:text-black"
+            >
               Get Grocery News!
             </h1>
             <p class="text-xl pb-2 lg:pb-5">
@@ -406,7 +480,7 @@
                 placeholder="Enter email..."
               />
               <br />
-              <button class="btn bg-green-primary text-white text-xl">
+              <button class="btn  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-green-700 bg-green-primary text-white text-xl">
                 Subscribe
               </button>
             </form>
@@ -415,11 +489,11 @@
         <!-- footer -->
         <section class="pt-80 pb-12">
           <div
-            class="lg:flex space-y-3 lg:space-y-0 lg:flex-row lg:justify-between items-center w-full mx-auto text-white"
+            class="lg:flex space-y-3 lg:space-y-0 lg:flex-row lg:justify-between items-end w-full mx-auto text-white"
           >
             <div class="lg:w-1/3 text-left">
               <div><img src="c2-assets/logo-footer.png" alt="" /></div>
-              <p class="lg:w-2/3 py-4">
+              <p class="lg:w-2/3 py-4 lg:pb-0">
                 Discover a world of treats, toys, and essentials handpicked for
                 your furry friends
               </p>
@@ -431,7 +505,7 @@
                 <li>Contact us</li>
               </ul>
             </div>
-            <div class="text-left lg:text-center space-y-3 py-4">
+            <div class="text-left lg:text-center space-y-3 py-4 lg:pb-0">
               <p class="text-left text-lg">Follow us</p>
               <div class="flex items-center space-x-3 text-center">
                 <i class="fa-brands fa-facebook"></i>
